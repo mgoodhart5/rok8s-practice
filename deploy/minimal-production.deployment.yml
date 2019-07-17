@@ -13,7 +13,7 @@ spec:
       containers:
         - name: rok8s-example
           # `latest` will be replaced with $CI_SHA1 by k8s-deploy
-          image: quay.io/example-org/rok8s-scripts-test:latest
+          image: quay.io/maryg5/rok8s-practice:latest
           ports:
           - containerPort: 8080
             name: http

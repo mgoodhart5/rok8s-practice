@@ -15,6 +15,7 @@ references:
     run:
       name: Build Docker Image
       command: |
+        docker login quay.io -u="${quay_robot}" -p="${quay_token}"
         docker-pull -f deploy/production.config
         docker-build -f deploy/production.config
 
